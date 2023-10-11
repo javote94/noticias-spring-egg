@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head th:replace="fragments/head"></head>
+    <body>
+        <!--Barra de navegación-->
+        <nav th:replace="fragments/navbar"></nav>
+        <!--Sección Hero-->
+        <div class="container-fluid hero-noticia">
+            <h1 th:text="${noticia.titulo}"></h1>
+            <p th:text="${noticia.cuerpo}"></p>
+            <!--Botón volver-->
+            <section class="text-center container btn-noticia">
+                <div class="row mt-3">
+                    <div>
+                        <a th:href="@{/}" class="btn btn-secondary my-2 botonVolver botones">Volver</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--Footer-->
+        <footer th:replace="fragments/footer"></footer>
+        <!-- JavaScript-->
+        <script th:replace="fragments/jsBootstrap"></script>
+    </body>
+</html>

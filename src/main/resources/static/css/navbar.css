@@ -1,0 +1,25 @@
+/* Barra de navegación */
+.navBar{ 
+    background-color: #fff !important;
+}
+
+.containerImg{ 
+    width: 20%;
+}
+
+.logo{ 
+    width: 40%;
+    margin: auto;
+}
+
+.elementosNav{ 
+    /*display: flex;*/
+    width: 30%;
+    justify-content: space-around;
+    color: #37474f;
+    font-weight: 700;
+}
+
+.elementos{
+    margin-right: 50px;
+}

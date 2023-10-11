@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head th:replace="fragments/head"></head>
+    <body>
+        <!--Barra de navegación-->
+        <nav th:replace="fragments/navbar"></nav>
+        <!--Sección Hero-->
+        <div class="container-fluid hero">
+            <div class="row row-cols">
+                <div class="card col-3"
+                     th:each="noticia : ${noticias}"
+                     th:if="${noticia.alta == true}"
+                     >
+                    <img src="/img/imgEgg.png" class="card-img-top" alt="Imagen noticia Egg">
+                    <div class="card-body">
+                        <h5 class="card-title" th:text="${noticia.titulo}"></h5>
+                        <p class="card-text" th:text="${noticia.cuerpo}"></p>
+                        <a th:href="@{/noticia/leer/__${noticia.id}__}" class="btn btn-primary">Leer noticia</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--Footer-->
+        <footer th:replace="fragments/footer"></footer>
+        <!-- JavaScript-->
+        <script th:replace="fragments/jsBootstrap"></script>
+    </body>
+</html>

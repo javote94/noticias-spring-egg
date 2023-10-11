@@ -1,0 +1,45 @@
+/*Estilos generales*/
+
+/*Hero*/
+.hero{
+    background-image: url(../img/FondoZoom_2.jpg);
+    background-size: cover;
+    align-items: center;
+    min-height: 400px;
+}
+
+/*Botones general*/
+.botones{
+    box-shadow: 0px 2px 16px 4px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 0px 2px 16px 4px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 2px 16px 4px rgba(0,0,0,0.36);
+}
+
+.botones:active{
+    box-shadow: none;
+}
+
+/*Botón volver*/
+.botonVolver{
+    width: 20rem;
+    box-shadow: 0px 2px 16px 4px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 0px 2px 16px 4px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 2px 16px 4px rgba(0,0,0,0.36);
+}
+
+.botonVolver:active{
+    box-shadow: none;
+}
+
+/*Mensaje de éxito y error*/
+.mensajeExito{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+.mensajeError{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+/*Noticia*/
+.hero-noticia{
+    background-image: url(../img/FondoZoom.jpg);
+    background-size: cover;
+    align-items: center;
+    height: 400px;
+}
+
+.btn-noticia{
+    margin-top: 250px;
+}
+
+
+
